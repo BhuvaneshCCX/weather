@@ -8,13 +8,11 @@
 body {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   height: 100vh;
   margin: 0;
   font-family: "Open Sans", sans-serif;
   background: linear-gradient(to right, #74ebd5, #acb6e5);
-  /* background: #222; */
-  /* background-image: url("https://source.unsplash.com/1600x900/?landscape"); */
   font-size: 120%;
 }
 
@@ -22,20 +20,45 @@ body {
   background: #190505d0;
   color: white;
   padding: 2em;
-  border-radius: 30px;
+  border-radius: 20px;
   width: 100%;
   max-width: 100%;
   margin: 1em;
+  height: auto;
+}
+
+@media only screen and (max-width: 580px) {
+  .card {
+    background: #190505d0;
+    color: white;
+    padding: 2em;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 1em;
+    height: auto;
+    margin-top: 20rem;
+  }
+}
+@media only screen and (max-width: 770px) and (min-width: 581px) {
+  .card {
+    background: #190505d0;
+    color: white;
+    padding: 2em;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 1em;
+    height: auto;
+    margin-top: 20rem;
+  }
 }
 
 .future {
   background: #190505d0;
   color: white;
   padding: 1em;
-  border-radius: 30px;
-  width: 13%;
-  max-width: 100%;
-  margin: 1em;
+  border-radius: 20px;
 }
 
 .search {
@@ -81,9 +104,4 @@ h1.temp {
 .flex {
   display: flex;
   align-items: center;
-}
-
-.description {
-  text-transform: capitalize;
-  margin-left: 8px;
 }
