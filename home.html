@@ -18,12 +18,12 @@
     <div class="card container">
       <div class="row">
         <div class="col-md-4 col-12">
-          <div id="localtime"></div>
-        </div>
-        <div class="col-md-4 col-12 text-center">
           <div id="city"></div>
         </div>
-        <div class="col-md-4 col-12 text-end">
+        <div class="col-md-4 col-12 d-md-block d-none text-center">
+          <div id="localtime"></div>
+        </div>
+        <div class="col-md-4 col-12 d-md-block d-none text-end">
           <div id="day"></div>
         </div>
       </div>
@@ -69,12 +69,13 @@
       </div>
       <span class="title-clr fw-bold title py-3">WEEK'S FORECAST</span>
       <div class="row text-center" id="forecast">
-        <div class="future col-md-2 col-6">
-          <div id="day1"></div>
-          <div id="date1"></div>
-          <img class="icon1" />
-          <div id="day1tempc"></div>
-          <div id="day1tempf"></div>
+        <div class="forecast col-md-2 col-6">
+          <div class="future">
+            <div id="day1"></div>
+            <img class="icon1" />
+            <div id="day1tempc"></div>
+            <div id="day1tempf"></div>
+          </div>
         </div>
       </div>
     </div>

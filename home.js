@@ -75,11 +75,13 @@ const fetchWeather = () => {
         console.log(week[d.getDay()], data.day.maxtemp_c, data.day.maxtemp_f);
         tags =
           tags +
-          `<div class="future col-md-2 col-6">
+          `<div class="forecast col-md-2 col-6">
+          <div class="future">
           <div id="date1">${week[d.getDay()]}</div>
           <img src="${data.day.condition.icon}" />
           <div id="day1tempc">${data.day.maxtemp_c} °C</div>
           <div id="day1tempf">${data.day.maxtemp_f} °F</div>
+          </div>
         </div>`;
       });
       document.getElementById("forecast").innerHTML = tags;
