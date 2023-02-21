@@ -6,15 +6,10 @@ function fetchWeather(city) {
   )
     .then((response) => response.json())
     .then((data) => {
-      let errorOccurred = false;
-
       try {
         display(data);
       } catch (error) {
-        if (!errorOccurred) {
-          alert("An error occurred: " + error);
-          errorOccurred = true;
-        }
+        alert("Enter the valid location");
       }
     });
 }
@@ -78,7 +73,7 @@ navigator.geolocation.getCurrentPosition((location) => {
       fetchWeather(data.location.name);
     });
 });
-// fetchWeather("ooty");
+fetchWeather("Maldives");
 const autocomplete = (city) => {
   fetch(
     "https://api.weatherapi.com/v1/search.json?key=f7d63b9a0a45493e9cb52439231302&&q=" +
